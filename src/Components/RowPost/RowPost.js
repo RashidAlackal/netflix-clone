@@ -12,14 +12,14 @@ function RowPost(props) {
             console.log(response.data) 
             setMovies(response.data.results)
         }).catch(err=>{
-            // alert('Natwork Error')
+            // alert('Network Error')
         })
-    }, [])
+    }, []);
     const opts = {
         height: '390',
         width: '100%',
         playerVars: {
-          // https://developers.google.com/youtube/player_parameters
+        //   https://developers.google.com/youtube/player_parameters
           autoplay: 1,
         },
       };
